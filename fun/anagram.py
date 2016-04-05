@@ -6,4 +6,14 @@ def isAnagram(s1, s2):
 		return False
 	return True
 
-print isAnagram('vovchikus', 'chikvovus')
+def isAnagrammSorted(s1, s2):
+	l1 = sorted(list(s1))
+	l2 = sorted(list(s2))
+	if(len(l1) != len(l2)):
+		return False
+	for i, v in zip(l1, l2):
+		if i != v:
+			return False 
+	return True
+
+print(isAnagrammSorted('appleb','pleap'))
