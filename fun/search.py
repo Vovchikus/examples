@@ -13,5 +13,5 @@ def binary_search(list, key):
 			return mid
 	return -(low + 1);
 
-list_to_search = [1, 2, 3, 4, 5, 6, 7]
-print binary_search(list_to_search, 11)
+list_to_search = [1, 2, 3, 4, 5, 6, 7, 8]
+print binary_search(list_to_search, 6)
